@@ -4,7 +4,6 @@ import requests
 import os
 import json
 import statsapi
-import pandas as pd
 from flask import Flask
 
 
@@ -167,7 +166,7 @@ if __name__ == "__main__":
 	user_input = None
 	while True:
 		if not user_input:
-			user_input = input('Input any key, or "exit" to quit: ')
+			user_input = input('Input any key to continue, or "exit" to quit: ')
 		if user_input == "exit":
 			print("Bye!")
 			break
