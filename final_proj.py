@@ -4,6 +4,7 @@ import requests
 import os
 import json
 import statsapi
+import pandas as pd
 from flask import Flask
 
 
@@ -166,10 +167,16 @@ if __name__ == "__main__":
 	user_input = None
 	while True:
 		if not user_input:
-			user_input = input('Input any key to continue, or "exit" to quit: ')
+			user_input = input('Input any key to continue, "help" for input guidelines,"info" for more information about the program, or "exit" to quit: ')
 		if user_input == "exit":
 			print("Bye!")
 			break
+		elif user_input == 'help':
+			print('Player names should be inputted with first name last name, nicknames are not allowed. Noteable exceptions include "J.D. Martinez" Accents are not required on names')
+			user_input = None
+		elif user_input == 'info':
+			print('This program finds a "link-player" between two players based on the past five years of Major League Baseball' )
+			user_input = None
 		else:
 			playerA = input("Enter Player A: ").strip().capitalize()
 			playerB = input("Enter Player B: ").strip().capitalize()
@@ -181,3 +188,5 @@ if __name__ == "__main__":
 				for i in range(playerCount):
 					g.addEdge(fileName[i+1].strip().upper(), fileName[0].strip().capitalize())
 			user_input = None
+
+#PlayerA: Miguel Cabrera, PlayerB: Julio Rodriguez, 3 degrees
