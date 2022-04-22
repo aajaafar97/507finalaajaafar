@@ -1,14 +1,19 @@
 # 507finalaajaafar
 Instructions: Upon running the file the user will be prompted the following:
+
 Input any key to continue, "help" for input guidelines, “info" for more information about the program, or "exit" to quit”.
+
 Python Packages:
 The required (not built-in) python packages for this code to work include requests, OS, and the MLB-Stats API wrapper for Python(https://pypi.org/project/MLB-StatsAPI/).
 
 Data Sources
 
 Data Source: https://statsapi.mlb.com/ (subscription cost is $35, wrapper used to circumvent it). 
+
 Wrapper for the source, MLB-StatsAPI: https://pypi.org/project/MLB-StatsAPI/ 
+
 Wiki/Documentation: https://github.com/toddrob99/MLB-StatsAPI/wiki
+
 Data accessed through the “get” function of the wrapper. Documentation found here: https://github.com/toddrob99/MLB-StatsAPI/wiki/Function:-get . Allowed for advanced querying of the MLB StatsAPI.
 
 Summary of data
