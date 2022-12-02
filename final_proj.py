@@ -3,7 +3,7 @@ import copy
 import requests
 import os
 import json
-import statsapi
+import statsapi #pip install MLB-StatsAPI
 import pandas as pd
 from flask import Flask
 
